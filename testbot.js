@@ -33,7 +33,7 @@ const premiumUser = ['396284197389729793'];
 
 bot.on("ready", async () => {
   console.log(`Bot został włączony. Jego nick: ${bot.user.tag}, id ${bot.user.id} \nPrefix: ${prefix}`);
-  bot.user.setActivity(`CookieBOT old version.`);
+  bot.user.setActivity(`cb!!!help | ${bot.guilds.size} servers.`);
 });
 
 bot.on("messageUpdate", (oldMessage, newMessage) => {
@@ -840,4 +840,4 @@ bot.on("message", async message => {
 
 });
 
-bot.login(botconfig.token);
+bot.login(process.env.TOKEN);
